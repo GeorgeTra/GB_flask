@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div class="news">
+      {% for new in news %}
+    <h1 class="title">{{ new.title }}</h1>
+      <p class="text">{{ new.text }}</p>
+      <p>{{ new.date }}</p>
+      {% endfor %}
+  </div>
+
+
+</body>
+</html>
