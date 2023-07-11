@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        {% for student in students %}
+            <p class="col-12 col-md-6">{{ student }} {{ student.mark.subject }}</p>
+        {% endfor %}
+    </div>
+{% endblock %}
